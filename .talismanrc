@@ -1,0 +1,3 @@
+fileignoreconfig:
+- filename: .bashrc
+  checksum: 5a9987081108dab9bef4eb50bb104d77d637cb490a5d359ac41747cd2bf2c548
