@@ -40,3 +40,6 @@ export VOLT_API_TIMEOUT=90s
 
 # direnv
 eval "$(direnv hook bash)"
+
+# GO
+PATH=$PATH:/usr/local/go/bin
