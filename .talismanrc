@@ -1,5 +1,5 @@
 fileignoreconfig:
 - filename: Users/admin/.bashrc
   checksum: 9e1fd7e01629de13c2b99fe6ce717688181bbfe2d09af55d3cc8e58bf2ae353d
-- filename: .envrc
-  checksum: d3d7ebd5441b3f081a813d4d6f9331acee8f351582c6abe0ae5870150d2b000a
+- filename: direnv/.envrc
+  checksum: 39f219523f66bcce718544c12d54f08821669f6c02d19d037c5a837b1a5c76fb
