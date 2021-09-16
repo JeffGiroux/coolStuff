@@ -28,11 +28,8 @@ alias tfs="terraform show"
 export GOOGLE_APPLICATION_CREDENTIALS="/path/to/yourFile.json"
 
 # kubectl autocompletion stuff
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 source <(kubectl completion bash)
-if [ -f /usr/local/share/bash-completion/bash_completion ]; then
-  . /usr/local/share/bash-completion/bash_completion
-fi
-source ~/.kube/kubectl_autocompletion
 
 # Volterra API Console
 source /path/to/yourConfig
