@@ -1,0 +1,26 @@
+       "Tenant1": {
+          "class": "Tenant",
+          "A1": {
+             "class": "Application",
+             "service": {
+                "class": "Service_HTTP",
+                "virtualAddresses": [
+                   "10.0.1.10"
+                ],
+                "pool": "web_pool"
+             },
+             "web_pool": {
+                "class": "Pool",
+                "monitors": [
+                   "http"
+                ],
+                "members": [{
+                   "servicePort": 80,
+                   "serverAddresses": [
+                      "192.0.1.10",
+                      "192.0.1.11"
+                   ]
+                }]
+             }
+          }
+       },

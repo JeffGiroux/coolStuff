@@ -1,0 +1,24 @@
+#!/bin/sh
+#
+# An example hook script
+#
+# 1. Place this in your repo's .git/hooks folder
+# 2. chmod +x file permissions
+#
+
+# Git Hooks PATH value is always top level repo folder
+# Change directory to correct subfolder
+cd as3-combine-githook
+
+# Starting JSON
+cat global/head_as3.json > as3.json
+
+# Loop through tenant folders for as3 JSON files
+files=$(ls tenants/*/*.json)
+for file in $files
+do
+  cat $file >> as3.json
+done
+
+# Ending JSON
+cat global/tail_as3.json >> as3.json
